@@ -1,0 +1,41 @@
+{
+  "id": "21bf0f",
+  "fileName": "my-enlightened-chair-notebook.json",
+  "name": "Basic Numbers",
+  "cells": [
+    {
+      "id": "f9aea5",
+      "type": "markdown",
+      "content": "INCR/DECR\n\nIncrement/decrement the number"
+    },
+    {
+      "id": "cac9b1",
+      "type": "redis",
+      "content": "SET age 20\r\n\r\nINCR age"
+    },
+    { "id": "1671630645916", "type": "redis", "content": "DECR age" },
+    {
+      "id": "1671630662431",
+      "type": "markdown",
+      "content": "INCRBY/DECRBY\n\nIncrease/decrease by the number"
+    },
+    { "id": "1671630702133", "type": "redis", "content": "INCRBY age 10" },
+    { "id": "1671630713691", "type": "redis", "content": "DECRBY age 10" },
+    {
+      "id": "1671630757765",
+      "type": "markdown",
+      "content": "INCRBYFLOAT\n\nIncrease by decimal numbers"
+    },
+    {
+      "id": "1671630778382",
+      "type": "redis",
+      "content": "INCRBYFLOAT age 11.5"
+    },
+    {
+      "id": "1671630820417",
+      "type": "redis",
+      "content": "INCRBYFLOAT age -11.5"
+    }
+  ],
+  "createdAt": "2022-12-21T13:49:41.957Z"
+}

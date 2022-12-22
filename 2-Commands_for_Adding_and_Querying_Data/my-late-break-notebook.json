@@ -1,0 +1,74 @@
+{
+  "id": "9661c3",
+  "fileName": "my-late-break-notebook.json",
+  "name": "Basic Strings",
+  "cells": [
+    {
+      "id": "844589",
+      "type": "markdown",
+      "content": "**Basic Commands**\n\nObjective: Write a simple string for our database\n\nGET and Set commands are intended only to store plain string or plain numbers"
+    },
+    {
+      "id": "0ea4dd",
+      "type": "redis",
+      "content": "SET message \"Hello World\" "
+    },
+    { "id": "1671619978472", "type": "redis", "content": "GET message" },
+    {
+      "id": "1671627346952",
+      "type": "redis",
+      "content": "SET color red\r\n\r\nSET color green GET\r\n\r\nGET color"
+    },
+    {
+      "id": "1671627547860",
+      "type": "redis",
+      "content": "SET size \"m\" XX\r\n\r\nSET color \"blue\" XX"
+    },
+    {
+      "id": "1671627593373",
+      "type": "redis",
+      "content": "SET color \"purple\" NX\r\n\r\nSET size \"m\" NX"
+    },
+    {
+      "id": "1671627758736",
+      "type": "redis",
+      "content": "SET color \"red\" EX 2\r\n\r\nGET color"
+    },
+    { "id": "1671627785921", "type": "redis", "content": "GET color" },
+    {
+      "id": "1671628372604",
+      "type": "redis",
+      "content": "SETEX color 2 \"red\"\r\n\r\nGET color"
+    },
+    {
+      "id": "1671628421508",
+      "type": "redis",
+      "content": "MSET color \"red\" size \"M\"\r\n\r\nGET color\r\nGET size"
+    },
+    { "id": "1671628592274", "type": "markdown", "content": "Get" },
+    {
+      "id": "1671628601789",
+      "type": "redis",
+      "content": "MGET color size\r\n\r\nGET color\r\nGET size"
+    },
+    { "id": "1671628667097", "type": "markdown", "content": "DEL" },
+    {
+      "id": "1671628674808",
+      "type": "redis",
+      "content": "MGET color size\r\n\r\nDEL color\r\n\r\nMGET color size"
+    },
+    { "id": "1671628778745", "type": "markdown", "content": "GETRANGE" },
+    {
+      "id": "1671628786146",
+      "type": "redis",
+      "content": "SET model \"toyota\"\r\n\r\nGETRANGE model 0 3"
+    },
+    { "id": "1671628893935", "type": "markdown", "content": "SETRANGE" },
+    {
+      "id": "1671628900301",
+      "type": "redis",
+      "content": "SETRANGE model 3 \"Honda\""
+    }
+  ],
+  "createdAt": "2022-12-21T10:49:21.049Z"
+}
